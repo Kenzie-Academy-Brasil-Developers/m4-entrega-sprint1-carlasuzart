@@ -8,7 +8,7 @@ const deleteUserService = (id) => {
   }
 
   users.splice(userIndex, 1);
-  return "User deleted sucessfully";
+  return "User deleted with sucess";
 };
 
 export default deleteUserService;

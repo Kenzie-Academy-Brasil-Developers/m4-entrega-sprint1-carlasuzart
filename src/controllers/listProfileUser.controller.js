@@ -1,11 +1,8 @@
 import listProfileUserService from "../services/listProfileUser.service";
 
 const listProfileUserController = (request, response) => {
-  const userToken = request;
-
-  const userProfile = listProfileUserService(userToken);
-
-  return response.json(userProfile);
+  const users = listUsersService();
+  return response.json(users);
 };
 
 export default listProfileUserController;
