@@ -18,13 +18,13 @@ const createUserService = async (email, name, password, isAdm) => {
   const user = {
     email,
     name,
+    id: newUser.id,
     createdOn: new Date(),
     updatedOn: new Date(),
     isAdm,
   };
 
   users.push(newUser);
-  console.log(newUser);
   return user;
 };
 
